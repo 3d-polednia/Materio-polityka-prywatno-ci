@@ -93,15 +93,15 @@
   <!-- ==================== POLSKI ==================== -->
   <main class="card">
   <section id="pl" class="lang active" lang="pl">
-    <p class="meta">Ostatnia aktualizacja: 16 lipca 2026 · Dotyczy aplikacji <strong>Materio</strong> (Android, identyfikator <code>pl.materio.app</code>)</p>
+    <p class="meta">Ostatnia aktualizacja: 2 sierpnia 2026 · Dotyczy aplikacji <strong>Materio</strong> (Android, identyfikator <code>pl.materio.app</code>)</p>
     <h1 style="font-size:1.4rem;margin:.3em 0">Polityka prywatności</h1>
 
     <div class="tldr">
-      <p><strong>W skrócie:</strong> Materio to aplikacja działająca offline. Nie wymaga konta ani logowania i nie prowadzi własnej analityki ani profilowania. Aplikacja jest darmowa i wyświetla baner reklamowy (Google AdMob), który do wyświetlania reklam może używać identyfikatora reklamowego urządzenia. Wszystkie Twoje obliczenia, projekty i ustawienia są przechowywane wyłącznie na Twoim urządzeniu. Internet i lokalizacja są używane, gdy korzystasz z mapy sklepów lub gdy wyświetlana jest reklama.</p>
+      <p><strong>W skrócie:</strong> Materio to aplikacja działająca offline. Nie wymaga konta ani logowania i nie prowadzi własnej analityki ani profilowania. Aplikacja jest darmowa i wyświetla reklamy (Google AdMob) — stały baner na dole ekranu oraz sporadyczną reklamę pełnoekranową przy eksporcie raportu PDF — które do wyświetlania reklam mogą używać identyfikatora reklamowego urządzenia. Wszystkie Twoje obliczenia, projekty i ustawienia są przechowywane wyłącznie na Twoim urządzeniu. Internet i lokalizacja są używane, gdy korzystasz z mapy sklepów lub gdy wyświetlana jest reklama.</p>
     </div>
 
     <h2>1. Kto jest administratorem danych</h2>
-    <p>Administratorem aplikacji Materio jest jej twórca (dalej „my”, „nas”). Kontakt: <a href="mailto:polednia@gmail.com">polednia@gmail.com</a>. Materio jest darmową aplikacją utrzymywaną z reklam (baner) — nie pobieramy opłat za korzystanie.</p>
+    <p>Administratorem aplikacji Materio jest jej twórca (dalej „my”, „nas”). Kontakt: <a href="mailto:polednia@gmail.com">polednia@gmail.com</a>. Materio jest darmową aplikacją utrzymywaną z reklam (baner oraz reklama pełnoekranowa) — nie pobieramy opłat za korzystanie.</p>
 
     <h2>2. Nasza zasada: offline-first</h2>
     <p>Materio zostało zaprojektowane tak, aby działać bez konta i bez połączenia z siecią. Nie prowadzimy żadnego serwera, na którym gromadzilibyśmy dane użytkowników. Nie tworzymy profili, nie sprzedajemy danych i nie przekazujemy ich reklamodawcom.</p>
@@ -125,7 +125,7 @@
       <tr><td>Mapa i wyszukiwanie sklepów</td><td>Pobranie kafelków mapy i lista pobliskich sklepów z Google Maps Platform.</td></tr>
       <tr><td>Promocje / gazetki</td><td>Otwarcie oficjalnych stron sklepów w przeglądarce (tylko linki — nie pobieramy treści).</td></tr>
       <tr><td>Nawigacja</td><td>Otwarcie zewnętrznej aplikacji map z wybranym adresem sklepu.</td></tr>
-      <tr><td>Reklamy</td><td>Pobranie i wyświetlenie banera reklamowego z Google AdMob.</td></tr>
+      <tr><td>Reklamy</td><td>Pobranie i wyświetlenie reklam (baner na dole ekranu oraz reklama pełnoekranowa przy eksporcie PDF) z Google AdMob oraz obsługa zgody na reklamy.</td></tr>
     </table>
     <p>Wszystkie kalkulatory, projekty i eksport PDF działają całkowicie offline.</p>
 
@@ -143,7 +143,12 @@
     <p>Raporty PDF generowane są lokalnie na urządzeniu. Trafiają do innych aplikacji tylko wtedy, gdy sam użyjesz przycisku udostępniania (Android Sharesheet). Nie wysyłamy ich automatycznie.</p>
 
     <h2>9. Reklamy</h2>
-    <p>Aplikacja jest darmowa i utrzymuje się z reklam. Wyświetlamy baner reklamowy dostarczany przez <strong>Google AdMob</strong>. Aby dobierać, wyświetlać i mierzyć reklamy, AdMob może korzystać z <strong>identyfikatora reklamowego</strong> Twojego urządzenia oraz ograniczonych danych technicznych (np. przybliżona lokalizacja wynikająca z adresu IP, typ urządzenia, informacje o zdarzeniach reklamowych). Możesz w każdej chwili zresetować lub usunąć identyfikator reklamowy oraz ograniczyć personalizację reklam w ustawieniach Androida (Ustawienia → Prywatność → Reklamy). W Europejskim Obszarze Gospodarczym, przed pokazaniem spersonalizowanych reklam, poprosimy Cię o zgodę. Nie łączymy reklam z Twoimi obliczeniami ani z danymi zapisanymi lokalnie w aplikacji. Zasady Google dotyczące reklam: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a>. Poza AdMob nie stosujemy innych sieci reklamowych ani analitycznych SDK i nie wysyłamy raportów o awariach z danymi osobowymi.</p>
+    <p>Aplikacja jest darmowa i utrzymuje się z reklam dostarczanych przez <strong>Google AdMob</strong>. Wyświetlamy je w dwóch formatach:</p>
+    <ul>
+      <li><strong>Baner</strong> — stały baner reklamowy na dole ekranu.</li>
+      <li><strong>Reklama pełnoekranowa (interstitial)</strong> — pojawia się sporadycznie w momencie generowania i udostępniania raportu PDF, z ograniczeniem częstotliwości (nie częściej niż raz na minutę). Reklama nigdy nie blokuje wygenerowania PDF — jeśli nie jest gotowa, plik powstaje od razu.</li>
+    </ul>
+    <p>Aby dobierać, wyświetlać i mierzyć reklamy, AdMob może korzystać z <strong>identyfikatora reklamowego</strong> Twojego urządzenia oraz ograniczonych danych technicznych (np. przybliżona lokalizacja wynikająca z adresu IP, typ urządzenia, informacje o zdarzeniach reklamowych). W <strong>Europejskim Obszarze Gospodarczym</strong>, zanim wyświetlimy reklamy, pokażemy okno zgody Google (User Messaging Platform / UMP), w którym decydujesz, czy zgadzasz się na reklamy spersonalizowane; bez zgody możesz zobaczyć wyłącznie reklamy niespersonalizowane. Niezależnie od tego możesz w każdej chwili zresetować lub usunąć identyfikator reklamowy oraz ograniczyć personalizację reklam w ustawieniach Androida (Ustawienia → Prywatność → Reklamy). Nie łączymy reklam z Twoimi obliczeniami ani z danymi zapisanymi lokalnie w aplikacji. Zasady Google dotyczące reklam: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a>. Poza AdMob nie stosujemy innych sieci reklamowych ani analitycznych SDK i nie wysyłamy raportów o awariach z danymi osobowymi.</p>
 
     <h2>10. Przechowywanie i usuwanie danych</h2>
     <p>Ponieważ dane są przechowywane wyłącznie lokalnie, masz nad nimi pełną kontrolę. Aby je trwale usunąć: wyczyść dane aplikacji w ustawieniach systemu Android lub odinstaluj Materio.</p>
@@ -166,15 +171,15 @@
 
   <!-- ==================== ENGLISH ==================== -->
   <section id="en" class="lang" lang="en">
-    <p class="meta">Last updated: 16 July 2026 · Applies to the <strong>Materio</strong> app (Android, package <code>pl.materio.app</code>)</p>
+    <p class="meta">Last updated: 2 August 2026 · Applies to the <strong>Materio</strong> app (Android, package <code>pl.materio.app</code>)</p>
     <h1 style="font-size:1.4rem;margin:.3em 0">Privacy Policy</h1>
 
     <div class="tldr">
-      <p><strong>In short:</strong> Materio is an offline-first app. It needs no account or sign-in and does no profiling analytics. The app is free and shows a banner ad (Google AdMob), which may use your device's advertising identifier to serve ads. All your calculations, projects and settings stay on your device. The internet and your location are used when you open the store map or when an ad is shown.</p>
+      <p><strong>In short:</strong> Materio is an offline-first app. It needs no account or sign-in and does no profiling analytics. The app is free and shows ads (Google AdMob) — a persistent banner at the bottom of the screen and an occasional full-screen ad when you export a PDF report — which may use your device's advertising identifier to serve ads. All your calculations, projects and settings stay on your device. The internet and your location are used when you open the store map or when an ad is shown.</p>
     </div>
 
     <h2>1. Who is responsible</h2>
-    <p>The Materio app is provided by its developer (“we”, “us”). Contact: <a href="mailto:polednia@gmail.com">polednia@gmail.com</a>. Materio is a free app supported by ads (a banner) — we do not charge for use.</p>
+    <p>The Materio app is provided by its developer (“we”, “us”). Contact: <a href="mailto:polednia@gmail.com">polednia@gmail.com</a>. Materio is a free app supported by ads (a banner and a full-screen ad) — we do not charge for use.</p>
 
     <h2>2. Our principle: offline-first</h2>
     <p>Materio is designed to work without an account and without a network connection. We run no server that stores user data. We do not build profiles, sell data or share it with advertisers.</p>
@@ -198,7 +203,7 @@
       <tr><td>Map &amp; store search</td><td>Loads map tiles and a list of nearby stores from Google Maps Platform.</td></tr>
       <tr><td>Deals / leaflets</td><td>Opens official store pages in your browser (links only — we scrape no content).</td></tr>
       <tr><td>Navigation</td><td>Opens an external maps app with the chosen store address.</td></tr>
-      <tr><td>Ads</td><td>Loads and displays a banner ad from Google AdMob.</td></tr>
+      <tr><td>Ads</td><td>Loads and displays ads (a bottom banner and a full-screen ad on PDF export) from Google AdMob, and handles ad consent.</td></tr>
     </table>
     <p>All calculators, projects and PDF export work fully offline.</p>
 
@@ -216,7 +221,12 @@
     <p>PDF reports are generated locally on your device. They reach other apps only when you use the share button yourself (the Android share sheet). We never send them automatically.</p>
 
     <h2>9. Advertising</h2>
-    <p>The app is free and supported by ads. We display a banner ad served by <strong>Google AdMob</strong>. To select, show and measure ads, AdMob may use your device's <strong>advertising identifier</strong> and limited technical data (e.g. approximate location derived from your IP address, device type, ad-event information). You can reset or delete the advertising ID and limit ad personalization at any time in Android settings (Settings → Privacy → Ads). In the European Economic Area we will ask for your consent before showing personalized ads. We do not link ads to your calculations or to data stored locally in the app. Google's advertising policy: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a>. Apart from AdMob we use no other ad or analytics SDKs and send no crash reports containing personal data.</p>
+    <p>The app is free and supported by ads served by <strong>Google AdMob</strong>. We display them in two formats:</p>
+    <ul>
+      <li><strong>Banner</strong> — a persistent ad banner at the bottom of the screen.</li>
+      <li><strong>Full-screen ad (interstitial)</strong> — shown occasionally when you generate and share a PDF report, with a frequency cap (no more than once per minute). The ad never blocks PDF generation — if none is ready, the file is created straight away.</li>
+    </ul>
+    <p>To select, show and measure ads, AdMob may use your device's <strong>advertising identifier</strong> and limited technical data (e.g. approximate location derived from your IP address, device type, ad-event information). In the <strong>European Economic Area</strong>, before showing ads we present a Google consent dialog (User Messaging Platform / UMP) where you decide whether you agree to personalized ads; without consent you may see non-personalized ads only. Independently of that, you can reset or delete the advertising ID and limit ad personalization at any time in Android settings (Settings → Privacy → Ads). We do not link ads to your calculations or to data stored locally in the app. Google's advertising policy: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a>. Apart from AdMob we use no other ad or analytics SDKs and send no crash reports containing personal data.</p>
 
     <h2>10. Data retention &amp; deletion</h2>
     <p>Because data is stored only locally, you are fully in control. To erase it permanently: clear the app's data in Android system settings, or uninstall Materio.</p>
@@ -239,15 +249,15 @@
 
   <!-- ==================== DEUTSCH ==================== -->
   <section id="de" class="lang" lang="de">
-    <p class="meta">Zuletzt aktualisiert: 16. Juli 2026 · Gilt für die App <strong>Materio</strong> (Android, Paket <code>pl.materio.app</code>)</p>
+    <p class="meta">Zuletzt aktualisiert: 2. August 2026 · Gilt für die App <strong>Materio</strong> (Android, Paket <code>pl.materio.app</code>)</p>
     <h1 style="font-size:1.4rem;margin:.3em 0">Datenschutzerklärung</h1>
 
     <div class="tldr">
-      <p><strong>Kurz gesagt:</strong> Materio ist eine Offline-First-App. Sie benötigt kein Konto und keine Anmeldung und betreibt keine Profiling-Analyse. Die App ist kostenlos und zeigt einen Werbebanner (Google AdMob), der zur Auslieferung von Anzeigen die Werbe-ID deines Geräts verwenden kann. Alle deine Berechnungen, Projekte und Einstellungen bleiben auf deinem Gerät. Internet und Standort werden genutzt, wenn du die Händlerkarte öffnest oder wenn eine Anzeige ausgeliefert wird.</p>
+      <p><strong>Kurz gesagt:</strong> Materio ist eine Offline-First-App. Sie benötigt kein Konto und keine Anmeldung und betreibt keine Profiling-Analyse. Die App ist kostenlos und zeigt Anzeigen (Google AdMob) — einen dauerhaften Banner am unteren Bildschirmrand sowie eine gelegentliche Vollbildanzeige beim Export eines PDF-Berichts —, die zur Auslieferung von Anzeigen die Werbe-ID deines Geräts verwenden können. Alle deine Berechnungen, Projekte und Einstellungen bleiben auf deinem Gerät. Internet und Standort werden genutzt, wenn du die Händlerkarte öffnest oder wenn eine Anzeige ausgeliefert wird.</p>
     </div>
 
     <h2>1. Verantwortlicher</h2>
-    <p>Die App Materio wird von ihrem Entwickler bereitgestellt („wir“, „uns“). Kontakt: <a href="mailto:polednia@gmail.com">polednia@gmail.com</a>. Materio ist eine kostenlose, werbefinanzierte App (Banner) — für die Nutzung fallen keine Gebühren an.</p>
+    <p>Die App Materio wird von ihrem Entwickler bereitgestellt („wir“, „uns“). Kontakt: <a href="mailto:polednia@gmail.com">polednia@gmail.com</a>. Materio ist eine kostenlose, werbefinanzierte App (Banner und Vollbildanzeige) — für die Nutzung fallen keine Gebühren an.</p>
 
     <h2>2. Unser Grundsatz: Offline-First</h2>
     <p>Materio ist so konzipiert, dass es ohne Konto und ohne Netzwerkverbindung funktioniert. Wir betreiben keinen Server, auf dem Nutzerdaten gespeichert werden. Wir erstellen keine Profile, verkaufen keine Daten und geben sie nicht an Werbetreibende weiter.</p>
@@ -271,7 +281,7 @@
       <tr><td>Karte &amp; Händlersuche</td><td>Lädt Kartenkacheln und eine Liste nahegelegener Händler von der Google Maps Platform.</td></tr>
       <tr><td>Angebote / Prospekte</td><td>Öffnet offizielle Händlerseiten im Browser (nur Links — wir lesen keine Inhalte aus).</td></tr>
       <tr><td>Navigation</td><td>Öffnet eine externe Karten-App mit der gewählten Händleradresse.</td></tr>
-      <tr><td>Werbung</td><td>Lädt und zeigt einen Werbebanner von Google AdMob.</td></tr>
+      <tr><td>Werbung</td><td>Lädt und zeigt Anzeigen (Banner am unteren Rand sowie Vollbildanzeige beim PDF-Export) von Google AdMob und verwaltet die Werbe-Einwilligung.</td></tr>
     </table>
     <p>Alle Rechner, Projekte und der PDF-Export funktionieren vollständig offline.</p>
 
@@ -289,7 +299,12 @@
     <p>PDF-Berichte werden lokal auf deinem Gerät erstellt. Sie gelangen nur dann in andere Apps, wenn du selbst die Teilen-Schaltfläche verwendest (Android-Teilen-Dialog). Wir senden sie niemals automatisch.</p>
 
     <h2>9. Werbung</h2>
-    <p>Die App ist kostenlos und werbefinanziert. Wir zeigen einen Werbebanner von <strong>Google AdMob</strong>. Zur Auswahl, Auslieferung und Messung von Anzeigen kann AdMob die <strong>Werbe-ID</strong> deines Geräts sowie begrenzte technische Daten verwenden (z. B. ungefährer Standort aus der IP-Adresse, Gerätetyp, Informationen zu Anzeigenereignissen). Du kannst die Werbe-ID jederzeit in den Android-Einstellungen zurücksetzen oder löschen und die Personalisierung einschränken (Einstellungen → Datenschutz → Werbung). Im Europäischen Wirtschaftsraum fragen wir vor personalisierter Werbung deine Einwilligung ab. Wir verknüpfen Werbung nicht mit deinen Berechnungen oder lokal gespeicherten Daten. Googles Werberichtlinie: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a>. Außer AdMob verwenden wir keine weiteren Werbe- oder Analyse-SDKs und senden keine Absturzberichte mit personenbezogenen Daten.</p>
+    <p>Die App ist kostenlos und werbefinanziert über <strong>Google AdMob</strong>. Wir zeigen Anzeigen in zwei Formaten:</p>
+    <ul>
+      <li><strong>Banner</strong> — ein dauerhafter Werbebanner am unteren Bildschirmrand.</li>
+      <li><strong>Vollbildanzeige (Interstitial)</strong> — erscheint gelegentlich beim Erstellen und Teilen eines PDF-Berichts, mit einer Häufigkeitsbegrenzung (höchstens einmal pro Minute). Die Anzeige blockiert die PDF-Erstellung nie — ist keine bereit, wird die Datei sofort erzeugt.</li>
+    </ul>
+    <p>Zur Auswahl, Auslieferung und Messung von Anzeigen kann AdMob die <strong>Werbe-ID</strong> deines Geräts sowie begrenzte technische Daten verwenden (z. B. ungefährer Standort aus der IP-Adresse, Gerätetyp, Informationen zu Anzeigenereignissen). Im <strong>Europäischen Wirtschaftsraum</strong> zeigen wir vor der Auslieferung von Anzeigen ein Einwilligungsfenster von Google (User Messaging Platform / UMP), in dem du entscheidest, ob du personalisierter Werbung zustimmst; ohne Einwilligung siehst du gegebenenfalls nur nicht personalisierte Anzeigen. Unabhängig davon kannst du die Werbe-ID jederzeit in den Android-Einstellungen zurücksetzen oder löschen und die Personalisierung einschränken (Einstellungen → Datenschutz → Werbung). Wir verknüpfen Werbung nicht mit deinen Berechnungen oder lokal gespeicherten Daten. Googles Werberichtlinie: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a>. Außer AdMob verwenden wir keine weiteren Werbe- oder Analyse-SDKs und senden keine Absturzberichte mit personenbezogenen Daten.</p>
 
     <h2>10. Speicherung &amp; Löschung</h2>
     <p>Da die Daten nur lokal gespeichert werden, hast du die volle Kontrolle. Zum endgültigen Löschen: App-Daten in den Android-Systemeinstellungen löschen oder Materio deinstallieren.</p>

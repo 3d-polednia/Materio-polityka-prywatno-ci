@@ -12,4 +12,4 @@ Hosting for the public privacy policy of the **Materio** Android app
 
 Use this URL as the *Privacy policy* link in Google Play Console.
 
-Last updated: 16 July 2026.
+Last updated: 2 August 2026.
